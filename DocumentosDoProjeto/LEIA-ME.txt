@@ -1,2 +1,3 @@
 O arquivo ES2_TAP possui o termo de abertura de projeto.
 O arquivo RP4-CVL possui os requesitos do projeto 4 - Sistema Web CVLattes.
+O arquivo PGP_01 possui o plano de gerenciamento de projeto.
