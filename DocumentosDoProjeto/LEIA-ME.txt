@@ -4,3 +4,4 @@ O arquivo PGP_01 possui o plano de gerenciamento de projeto.
 O arquivo CHKLIST03(Humberto) possui a avaliação, referente ao aluno Humberto, das tarefas listadas dentro do mesmo.
 O arquivo DEP_01 possui a declaração do escopo de projeto.
 O arquivo PGE_01 possui o plano de gerenciamento de escopo.
+A imagem diagrama_caso_de_uso_HemoSystem.png possui o diagrama de caso de uso do sistema HemoSystem.
