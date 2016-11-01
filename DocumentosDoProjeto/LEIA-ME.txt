@@ -5,3 +5,5 @@ O arquivo CHKLIST03(Humberto) possui a avaliação, referente ao aluno Humberto,
 O arquivo DEP_01 possui a declaração do escopo de projeto.
 O arquivo PGE_01 possui o plano de gerenciamento de escopo.
 A imagem diagrama_caso_de_uso_HemoSystem.png possui o diagrama de caso de uso do sistema HemoSystem.
+O diagrama_classe.mwb possui o diagrama de classe e para abri-lo é só subi-lo no MySQL Workbench.
+O arquivo GG.pdf possui o gráfico de Gantt com a agenda para o decorrer desse projeto.
