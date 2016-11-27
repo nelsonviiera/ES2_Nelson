@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: App
-        psr4_prefix: App
+        namespace: cvlattes
+        psr4_prefix: cvlattes
         src_path: app

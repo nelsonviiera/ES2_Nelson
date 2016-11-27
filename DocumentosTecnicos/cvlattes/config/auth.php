@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'model' => App\User::class,
+    'model' => cvlattes\Models\User::class,
 
     /*
     |--------------------------------------------------------------------------
