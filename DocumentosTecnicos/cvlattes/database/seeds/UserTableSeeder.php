@@ -11,6 +11,12 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(\cvlattes\Models\User::class, 10)->create();
+        factory(\cvlattes\Models\User::class, 10)->create()->each(function($c) {
+
+        	for($i=0; $i<=5; $i++){
+        		$c->documents()->save(factory(\cvlattes\Models\Document::class)->make());
+        	}
+
+        });
     }
 }

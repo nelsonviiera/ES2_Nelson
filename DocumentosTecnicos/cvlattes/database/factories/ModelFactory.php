@@ -28,3 +28,10 @@ $factory->define(cvlattes\Models\College::class, function (Faker\Generator $fake
       	'password' => $faker->numberBetween(10, 50),
     ];
 });
+
+$factory->define(cvlattes\Models\Document::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->word,
+      	'description' => $faker->sentence,
+    ];
+});
