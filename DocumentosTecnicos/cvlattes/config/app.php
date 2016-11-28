@@ -145,6 +145,7 @@ return [
         cvlattes\Providers\AuthServiceProvider::class,
         cvlattes\Providers\EventServiceProvider::class,
         cvlattes\Providers\RouteServiceProvider::class,
+        cvlattes\Providers\RepositoryServiceProvider::class,
 
     ],
 
