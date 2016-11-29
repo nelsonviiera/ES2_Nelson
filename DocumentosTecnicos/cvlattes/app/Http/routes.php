@@ -21,3 +21,5 @@ Route::get('test', function(){
 	return $repository->all();
 
 });
+
+Route::get('admin/users', 'UsersController@index');
