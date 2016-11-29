@@ -1,7 +1,7 @@
 <?php
-
 namespace cvlattes\Http\Controllers;
 
+use cvlattes\Repositories\UserRepository;
 use Illuminate\Http\Request;
 
 use cvlattes\Http\Requests;
@@ -9,14 +9,11 @@ use cvlattes\Http\Controllers\Controller;
 
 class UsersController extends Controller
 {
-    public function index()
+    public function index(UserRepository $repository)
     {
-    	$nome = "Tiago";
-    	$linguagens = [
-    		'PHP',
-    		'Java',
-    		'Python'
-    	];
-    	return view('admin.users.index', compact('nome', 'linguagens'));
+
+        $users = $repository->all();
+    	return view('admin.users.index', compact('users'));
+        
     }
 }

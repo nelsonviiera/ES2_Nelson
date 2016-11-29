@@ -27,5 +27,10 @@ class RepositoryServiceProvider extends ServiceProvider
             'cvlattes\Repositories\CollegeRepository',
             'cvlattes\Repositories\CollegeRepositoryEloquent'
         );
+
+        $this->app->bind(
+            'cvlattes\Repositories\UserRepository',
+            'cvlattes\Repositories\UserRepositoryEloquent'
+        );
     }
 }
