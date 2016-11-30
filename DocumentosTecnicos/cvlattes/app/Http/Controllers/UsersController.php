@@ -12,8 +12,18 @@ class UsersController extends Controller
     public function index(UserRepository $repository)
     {
 
-        $users = $repository->all();
+        $users = $repository->paginate(5);
     	return view('admin.users.index', compact('users'));
+
+    }
+
+    public function create()
+    {
+        return view('admin.users.create');
+    }
+
+    public function store()
+    {
         
     }
 }

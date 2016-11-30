@@ -5,7 +5,10 @@
 	<div class="container">
 		<h3>Usuarios</h3>
 
-		<table class="table">
+		<a href="{{ route('admin.users.create') }}" class="btn btn-default">Novo usuario</a>
+		<br><br>
+
+		<table class="table table-bordered">
 			<thead>
 				<tr>
 					<th>ID</th>
@@ -24,5 +27,8 @@
 				@endforeach
 			</tbody>	
 		</table>
+
+		{!! $users->render() !!}
+
 	</div>
 @endsection

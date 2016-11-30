@@ -23,3 +23,5 @@ Route::get('test', function(){
 });
 
 Route::get('admin/users', 'UsersController@index');
+Route::get('admin/users/create', ['as'=>'admin.users.create', 'uses'=>'UsersController@create']);
+Route::post('admin/users/store', ['as'=>'admin.users.store', 'uses'=>'UsersController@store']);
