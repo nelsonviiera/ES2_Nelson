@@ -12,7 +12,7 @@
 */
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory->define(cvlattesweb\User::class, function (Faker\Generator $faker) {
+$factory->define(cvlattesweb\Models\User::class, function (Faker\Generator $faker) {
     static $password;
 
     return [
@@ -20,5 +20,21 @@ $factory->define(cvlattesweb\User::class, function (Faker\Generator $faker) {
         'email' => $faker->unique()->safeEmail,
         'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => str_random(10),
+    ];
+});
+
+$factory->define(cvlattesweb\Models\College::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->word,
+      	'cnpj' => $faker->numberBetween(10, 50),
+      	'email' => $faker->word,
+      	'password' => $faker->numberBetween(10, 50),
+    ];
+});
+
+$factory->define(cvlattesweb\Models\Document::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->word,
+      	'description' => $faker->sentence,
     ];
 });
