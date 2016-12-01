@@ -2,7 +2,7 @@
 
 namespace cvlattesweb\Http\Controllers\Auth;
 
-use cvlattesweb\User;
+use cvlattesweb\Models\User;
 use cvlattesweb\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
