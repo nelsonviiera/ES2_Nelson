@@ -178,6 +178,7 @@ return [
         // cvlattesweb\Providers\BroadcastServiceProvider::class,
         cvlattesweb\Providers\EventServiceProvider::class,
         cvlattesweb\Providers\RouteServiceProvider::class,
+        cvlattesweb\Providers\RepositoryServiceProvider::class,
 
     ],
 

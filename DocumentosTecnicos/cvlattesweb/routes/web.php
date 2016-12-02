@@ -18,3 +18,25 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/userlist', function(){
+
+	$repository = app()->make('cvlattesweb\Repositories\UserRepository');
+	return $repository->all();
+
+});
+
+Route::get('/documentlist', function(){
+
+	$repository = app()->make('cvlattesweb\Repositories\DocumentRepository');
+	return $repository->all();
+
+});
+
+Route::get('/collegelist', function(){
+
+	$repository = app()->make('cvlattesweb\Repositories\CollegeRepository');
+	return $repository->all();
+
+});
+
