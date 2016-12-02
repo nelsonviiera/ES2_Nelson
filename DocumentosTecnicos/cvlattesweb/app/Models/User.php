@@ -5,9 +5,13 @@ namespace cvlattesweb\Models;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+use Illuminate\Database\Eloquent\Model;
+use Prettus\Repository\Contracts\Transformable;
+use Prettus\Repository\Traits\TransformableTrait;
+
+class User extends Authenticatable implements Transformable
 {
-    use Notifiable;
+    use TransformableTrait, Notifiable;
 
     /**
      * The attributes that are mass assignable.

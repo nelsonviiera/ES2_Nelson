@@ -3,10 +3,14 @@
 namespace cvlattesweb\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Prettus\Repository\Contracts\Transformable;
+use Prettus\Repository\Traits\TransformableTrait;
 
-class Document extends Model
+class Document extends Model implements Transformable
 {
-    protected $fillable = [
+    use TransformableTrait;
+
+   protected $fillable = [
     	'user_id',
     	'name',
     	'description',
