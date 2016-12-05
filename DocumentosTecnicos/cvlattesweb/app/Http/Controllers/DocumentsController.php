@@ -14,4 +14,9 @@ class DocumentsController extends Controller
 
     	return view('/admin/documents/index', compact('documents'));
     }
+
+    public function create()
+    {
+    	return view('/admin/documents/create');
+    }
 }

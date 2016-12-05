@@ -19,9 +19,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/userlist', 'UsersController@index');
+Route::get('/userlist', ['as'=>'userlist', 'uses'=>'UsersController@index']);
 
-Route::get('/documentlist', 'DocumentsController@index');
+Route::get('/documentlist', ['as'=>'documentlist', 'uses'=>'DocumentsController@index']);
+
+Route::get('/documentcreate', ['as'=>'documentcreate', 'uses'=>'DocumentsController@create']);
 
 Route::get('/collegelist', function(){
 
