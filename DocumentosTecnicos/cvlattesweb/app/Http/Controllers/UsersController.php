@@ -10,7 +10,7 @@ class UsersController extends Controller
     public function index(UserRepository $repository)
     {
 
-    	$users = $repository->all();
+    	$users = $repository->paginate(10);//pode ser paginate() ou all()
 
     	return view('/admin/users/index', compact('users'));
     }

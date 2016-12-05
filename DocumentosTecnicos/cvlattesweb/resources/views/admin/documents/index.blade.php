@@ -25,5 +25,8 @@
             @endforeach
         </tbody>
     </table>
+
+    {!! $documents->render() !!}
+
 </div>
 @endsection
