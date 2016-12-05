@@ -21,15 +21,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/userlist', 'UsersController@index');
 
-	//$repository = app()->make('cvlattesweb\Repositories\UserRepository');
-	//return $repository->all();
-
-Route::get('/documentlist', function(){
-
-	$repository = app()->make('cvlattesweb\Repositories\DocumentRepository');
-	return $repository->all();
-
-});
+Route::get('/documentlist', 'DocumentsController@index');
 
 Route::get('/collegelist', function(){
 
