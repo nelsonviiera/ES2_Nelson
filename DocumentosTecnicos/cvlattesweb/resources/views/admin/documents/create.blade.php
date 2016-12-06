@@ -23,6 +23,11 @@
     </div>
 
     <div class="form-group">
+        {!! Form::label('arquivo', 'Arquivo') !!}
+        {!! Form::file('Arquivo', null, ['class'=>'form-control']) !!}
+    </div>
+
+    <div class="form-group">
         {!! Form::submit('Enviar', ['class'=>'btn btn-primary']) !!}
     </div>
 
