@@ -22,6 +22,30 @@
                     <a href="{{ route('documentcreate') }}" class="btn btn-default" style="float: left;">Adicionar documentos</a>
                     <br/><br/>
 
+
+                    <h3>Meus documentos</h3>
+                    <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Proprietario</th>
+                            <th>Documento</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach($documents as $document)
+                        <tr>
+                            <td>{{ $document->id }}</td>
+                            <td>{{ $document->user->name }}</td>
+                            <td>{{ $document->name }}</td>
+                            <td>{{ $document->description }}</td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                    </table>
+
                 </div>
             </div>
         </div>

@@ -4,6 +4,7 @@ namespace cvlattesweb\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use cvlattesweb\Repositories\DocumentRepository;
 
 class HomeController extends Controller
 {
@@ -22,9 +23,11 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(DocumentRepository $repository)
     {
         $id = Auth::id();
-        return view('home', compact('id'));
+        $documents = $repository->findByField('user_id', $id);//pegando documentos pelo id do usuario logado
+
+        return view('home', compact('id', 'documents'));
     }
 }

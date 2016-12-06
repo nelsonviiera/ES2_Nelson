@@ -18,7 +18,7 @@ class DocumentsController extends Controller
     public function index()
     {
 
-    	$documents = $this->repository->paginate(15);
+    	$documents = $this->repository->paginate(15);//todos os documentos de todos os usuarios
 
     	return view('/admin/documents/index', compact('documents'));
     }
