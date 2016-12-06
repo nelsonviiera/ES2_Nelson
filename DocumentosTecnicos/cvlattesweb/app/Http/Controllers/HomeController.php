@@ -25,6 +25,6 @@ class HomeController extends Controller
     public function index()
     {
         $id = Auth::id();
-        return view('home', ['id'=>$id]);
+        return view('home', compact('id'));
     }
 }
