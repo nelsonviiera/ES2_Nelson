@@ -8,6 +8,11 @@
     {!! Form::open(['route'=>'documentstore']) !!}
 
     <div class="form-group">
+        {!! Form::label('Id', 'ID do usuário') !!}
+        {!! Form::number('user_id', $id, ['class'=>'form-control']) !!}
+    </div>
+
+    <div class="form-group">
         {!! Form::label('Name', 'Nome do documento') !!}
         {!! Form::text('name', null, ['class'=>'form-control']) !!}
     </div>

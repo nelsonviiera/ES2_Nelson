@@ -26,12 +26,15 @@ class DocumentsController extends Controller
     public function create()
     {
     	$id = Auth::id();
+        $user = $this->repository->find($id);
     	return view('/admin/documents/create', compact('id'));
     }
 
-    public function store()
+    public function store(Request $request)
     {
-        $id = Auth::id();
-        return view('/admin/documents/create', compact('id'));
+        $data = $request->all();
+        $this->repository->create($data);
+        //dd($request->all());
+        return redirect()->route('documentlist');
     }
 }

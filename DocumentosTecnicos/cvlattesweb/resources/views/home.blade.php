@@ -22,8 +22,6 @@
                     <a href="{{ route('documentcreate') }}" class="btn btn-default" style="float: left;">Adicionar documentos</a>
                     <br/><br/>
 
-
-                    
                 </div>
             </div>
         </div>
