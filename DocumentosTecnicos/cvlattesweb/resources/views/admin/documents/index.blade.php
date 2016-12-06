@@ -8,7 +8,7 @@
         <thead>
             <tr>
                 <th>ID</th>
-                <th>User_ID</th>
+                <th>Proprietario</th>
                 <th>Documento</th>
                 <th>Descrição</th>
             </tr>
@@ -18,7 +18,7 @@
             @foreach($documents as $document)
             <tr>
                 <td>{{ $document->id }}</td>
-                <td>{{ $document->user_id }}</td>
+                <td>{{ $document->user->name }}</td>
                 <td>{{ $document->name }}</td>
                 <td>{{ $document->description }}</td>
             </tr>

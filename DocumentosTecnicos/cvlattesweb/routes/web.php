@@ -25,6 +25,8 @@ Route::get('/documentlist', ['as'=>'documentlist', 'uses'=>'DocumentsController@
 
 Route::get('/documentcreate', ['as'=>'documentcreate', 'uses'=>'DocumentsController@create']);
 
+Route::post('/documentstore', ['as'=>'documentstore', 'uses'=>'DocumentsController@store']);
+
 Route::get('/collegelist', function(){
 
 	$repository = app()->make('cvlattesweb\Repositories\CollegeRepository');

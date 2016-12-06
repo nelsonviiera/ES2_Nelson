@@ -28,4 +28,10 @@ class DocumentsController extends Controller
     	$id = Auth::id();
     	return view('/admin/documents/create', compact('id'));
     }
+
+    public function store()
+    {
+        $id = Auth::id();
+        return view('/admin/documents/create', compact('id'));
+    }
 }
