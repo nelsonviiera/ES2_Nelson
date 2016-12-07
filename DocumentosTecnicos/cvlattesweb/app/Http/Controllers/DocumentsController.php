@@ -37,4 +37,11 @@ class DocumentsController extends Controller
         //dd($request->all());
         return redirect()->route('documentlist');
     }
+
+    public function remove($id)
+    {
+        $this->repository->delete($id);
+
+        return redirect()->route('documentlist');
+    }
 }

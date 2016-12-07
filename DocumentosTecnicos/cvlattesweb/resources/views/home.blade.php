@@ -31,6 +31,7 @@
                             <th>Proprietario</th>
                             <th>Documento</th>
                             <th>Descrição</th>
+                            <th>Ação</th>
                         </tr>
                     </thead>
 
@@ -41,6 +42,10 @@
                             <td>{{ $document->user->name }}</td>
                             <td>{{ $document->name }}</td>
                             <td>{{ $document->description }}</td>
+                            
+                            <td>
+                                <a href="{{ route('documentremove',['id'=>$document->id])}}" class="btn btn-default btn-sm">Remover</a>
+                            </td>
                         </tr>
                         @endforeach
                     </tbody>
